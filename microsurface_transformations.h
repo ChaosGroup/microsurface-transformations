@@ -470,8 +470,8 @@ class Discrete: public Microsurface {
 				inside++;
 			}
 		}
-		const float condeSolidAngle=2.0f*PI*(1.0f-cosGamma);
-		return float(inside)/(float(count)*condeSolidAngle*h.z);
+		const float coneSolidAngle=2.0f*PI*(1.0f-cosGamma);
+		return float(inside)/(float(count)*coneSolidAngle*h.z);
 	}
 
 	float getG1(Vector dir) const {
